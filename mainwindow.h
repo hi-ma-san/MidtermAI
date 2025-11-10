@@ -17,7 +17,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onIncrementClicked();
+    void onDecrementClicked();
+
 private:
     Ui::MainWindow *ui;
+    int currentValue;
 };
 #endif // MAINWINDOW_H
